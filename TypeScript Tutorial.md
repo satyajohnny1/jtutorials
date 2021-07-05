@@ -1,10 +1,14 @@
-TYPESCRIPT
-** What is **
+## TYPESCRIPT
+
+
+### What is TypeScript 
 TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
 It's developed by Microsoft.
 Right now the stable version is 2.3.
 It's used by the major frameworks like React, Angular, NodeJs express, ASP.NET, React Native, etc.
-** Installation **
+
+
+### Installation
 Visual Studio 2017 and Visual Studio 2015 Update 3 include TypeScript by default.
 Otherwise:
 npm install -g typescript
