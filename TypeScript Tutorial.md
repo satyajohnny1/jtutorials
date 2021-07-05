@@ -12,13 +12,17 @@ It's used by the major frameworks like React, Angular, NodeJs express, ASP.NET, 
 Visual Studio 2017 and Visual Studio 2015 Update 3 include TypeScript by default.
 Otherwise:
 npm install -g typescript
-** Compiling your code **
+
+
+### Compiling your code
 Typescript file extension is .ts (for example: tsc greeter.ts)
 You can compile it doing:
 tsc greeter.ts
 The result will be a file greeter.js
-** Particularity **
-1) Type annotations: they introduced the types for variables (like string, number, boolean, number[] or Array<number>, [string, number], ecc). In this case if you assign a string value to a number variable the compiler will catch an error.
+
+
+## 1) Type annotations: 
+they introduced the types for variables (like string, number, boolean, number[] or Array<number>, [string, number], ecc). In this case if you assign a string value to a number variable the compiler will catch an error.
    Example:
 ```
 var name: string = 'Enrico';  // OK
@@ -45,7 +49,11 @@ let someValue: any = "this is a string";
 let strLength1: number = (<string>someValue).length;
 let strLength2: number = (someValue as string).length;
 ```
-2) Enums: an enum is a way of giving more friendly names to sets of numeric values
+   
+   
+## 2) Enums: 
+   an enum is a way of giving more friendly names to sets of numeric values
+   
 ```
 enum Color {Red, Green, Blue}
 let c: Color = Color.Green;
@@ -53,7 +61,10 @@ or with assigned values
 enum Color {Red = 1, Green, Blue}
 let c: Color = Color.Green;
 ```
-3) Interfaces: an interface is a particular class that describes an objects.
+   
+   
+## 3) Interfaces: 
+   an interface is a particular class that describes an objects.
     Example:
 ``` 
 interface Person {
@@ -71,7 +82,8 @@ partecipant = {
     lastName: 'Doe'
 };
 ```
-4) Classes: support for class-based object-oriented programming. Every class will have a constructor and a few public fields.
+## 4) Classes: 
+support for class-based object-oriented programming. Every class will have a constructor and a few public fields.
 When you declare constructor arguments, if you use "public" keyword before the argument will allow Typescript to automatically create properties with that name.
 ```
 class Student {
@@ -90,7 +102,7 @@ class ExtendedAdder extends Adder {
     ....
 }
 ```
-5) Functions
+## 5) Functions
 ```
 function buildName(firstName: string, lastName = "Smith") : string {
     return firstName + " " + lastName;
@@ -99,7 +111,8 @@ function buildName(firstName: string, lastName = "Smith") : string {
 As argument you can have also this variants:
 lastName?: string    // Optional parameter
 lastName = "Smith"   // Assign default value
-5) Arrow function  
+
+### Arrow function  
 This symbol is =>
 "this" is a variable that’s set when a function is called. This makes it a very powerful and flexible feature, but it comes at the cost of always having to know about the context that a function is executing in. This is notoriously confusing, especially when returning a function or passing a function as an argument.
 The scope of Arrow functions is to replace the usage of "this".
