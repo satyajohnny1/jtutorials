@@ -2,22 +2,23 @@
 
 
 ### What is TypeScript 
-TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-It's developed by Microsoft.
-Right now the stable version is 2.3.
-It's used by the major frameworks like React, Angular, NodeJs express, ASP.NET, React Native, etc.
+TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.  
+It's developed by Microsoft.  
+Right now the stable version is 2.3.  
+It's used by the major frameworks like React, Angular, NodeJs express, ASP.NET, React Native, etc.  
 
 
 ### Installation
-Visual Studio 2017 and Visual Studio 2015 Update 3 include TypeScript by default.
-Otherwise:
-npm install -g typescript
+Visual Studio 2017 and Visual Studio 2015 Update 3 include TypeScript by default.  
+Otherwise:  
+`npm install -g typescript`
 
 
 ### Compiling your code
-Typescript file extension is .ts (for example: tsc greeter.ts)
+Typescript file extension is `.ts` (for example: tsc greeter.ts)
+
 You can compile it doing:
-tsc greeter.ts
+`tsc greeter.ts`
 The result will be a file greeter.js
 
 
